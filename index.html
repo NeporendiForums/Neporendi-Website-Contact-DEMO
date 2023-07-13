@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neporendi Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+
+<body>
+        
+    <form action="https://formspree.io/f/mjvqvlrv" method="POST">
+       <h1>Neporendi Contact Form</h1>
+       <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+       <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+       <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+       <textarea name="message" cols="60" rows="5" placeholder="Enter Message" autocomplete="off" required></textarea>
+       <button type="submit">Send Message</button>
+    </form>
+        </div>
+
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "images/img-1.jpg",
+            "images/img-2.jpg",
+            "images/img-3.jpg",
+            "images/img-4.jpg",
+            "images/img-5.jpg",
+        );
+
+       var len = images.length;
+       var i = 0;
+
+       function slider(){
+           if(i > len-1){
+                i = 0;
+           }
+           slideImg.src = images[i];
+           i++;
+           setTimeout('slider()',3000);
+       }
+    </script>
+</body>
+
+
+</html>
